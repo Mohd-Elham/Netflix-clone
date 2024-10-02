@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: 
+        linear-gradient(180deg, 
+            rgba(2, 0, 36, 1) 0%, 
+            rgba(0, 0, 0, 1) 0%, 
+            rgba(0, 0, 0, 0.832) 7%, 
+            rgba(0, 0, 0, 0.507) 49%, 
+            rgba(0, 0, 0, 0.535) 60%, 
+            rgba(0, 0, 0, 0.802) 100%),
+        url(images/background-image.jpg); /* Ensure this path is correct */
+    background-size: cover; /* Cover the entire header area */
+    background-position: center; /* Center the image */
+    padding: 10px 20%;
+    position: relative;
+}
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.language-btn{
+    justify-content: center;
+    width: 100px;
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+.language-btn img{
+    
+    width: 10px;
+    padding: 0px 1px;
+}
+.lang-icon {
+    filter: invert(100%);
+    transform: scale(1.5);
+    margin-right: 5px;
+  }
+  
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 0px;
+}
+
+.header-content h1{
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 800;
+    max-width: 1200px;
+    letter-spacing: -1px;
+    transform: scaleX(0.9); 
+    display: inline-block;
+}
+
+.header-content h3{
+    font-weight: 600;
+    margin-top: 30px;
+    transform: scaleX(1.1); 
+    display: inline-block;
+}
+
+.header-content p {
+    margin-top: 40px;
+    font-weight: 600;
+    
+}
+
+.email-signup-input{
+    margin-top: 15px;
+    width: 450px;
+    height: 60px;
+    background-color: #151515; /* Light grey background */
+    color: rgb(255, 255, 255); /* Text color */
+    border: 1px solid #ccc; /* Optional border color */
+    padding: 10px; /* Optional padding for better appearance */
+    border-radius: 5px;
+}
+
+.get-started{
+    width: 200px;
+    height: 60px;
+}
