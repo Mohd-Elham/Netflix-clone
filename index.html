@@ -1,32 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Clone</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-   <div class="header">
-    <nav>
-        <img src="images/logo.png" class="logo">
-        <div>
+    <div class="header">
+        <nav>
+            <img src="images/logo.png" class="logo" alt="NETFLIX">
+            <div>
+                <button class="language-btn">
+                    <img class="lang-icon" src="images/vector7.svg" alt="">Enlgish <img src="images/down-icon.png"
+                        alt=""></button>
+                <button>Sign In</button>
+            </div>
+            <div class="header-content">
+                <h1>Unlimited movies, TV shows and more</h1>
+                <h3>Starts at ₹149. Cancel at any time.</h3>
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                <form class="email-signup" action="">
+                    <input class="email-signup-input" type="email" placeholder="Email address" required>
+                    <button class="get-started" type="submit">Get Started</button>
+                </form>
+
+            </div>
+
+
+        </nav>
+
+    </div>
+    <div class="dome">
+        <div class="fliter-tab">
             <button class="language-btn">
-                <img class="lang-icon" src="images/vector7.svg" alt="">Enlgish  <img src="images/down-icon.png" alt=""></button>
-            <button>Sign In</button>
+                India <img src="images/down-icon.png" alt="">
+            </button>
+            <button class="language-btn">
+                Movies <img src="images/down-icon.png" alt="">
+            </button>
         </div>
-        <div class="header-content">
-            <h1>Unlimited movies, TV shows and more</h1>
-            <h3>Starts at ₹149. Cancel at any time.</h3>
-            <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <form class="email-signup" action="">
-                <input class="email-signup-input" type="email" placeholder="Email address" required>
-                <button class="get-started" type="submit">Get Started</button>
-            </form>
-        
+
+        <h1>Trending now!</h1>
+        <!-- <div class="break"></div> -->
+
+    </div>
+    <div class="movies-img"></div>
+    <div class="footer">
+        <h1>More reasons to join</h1>
+        <div class="reasons">
+            <div class="reasons-boxes">
+                <h1>Enjoy on your TV</h1>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                <div class="vector-img1"></div>
+            </div>
+            <div class="reasons-boxes">
+                <h1>Download your shows to watch offline</h1>
+                <p>Save your favourites easily and always have something to watch.</p>
+                <div class="vector-img2"></div>
+            </div>
+            <div class="reasons-boxes">
+                <h1>Watch everywhere</h1>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+                <div class="vector-img3"></div>
+            </div>
+            <div class="reasons-boxes">
+                <h1>Create profiles for kids</h1>
+                <p>Send kids on adventures with their favourite characters in a space made just for them — free with
+                    your membership.</p>
+                <div class="vector-img4"></div>
+            </div>
         </div>
-        
-    </nav>
-   </div>
+        <div class="faq">
+            <h1>Frequently Asked Questions</h1>
+            <div class="faq-box">
+                <p>Whats Netflix?</p>
+                <div class="plus"></div>
+
+            </div>
+            <div class="faq-box">
+                <p>
+                    How much does Netflix cost?
+                </p>
+                <div class="plus"></div>
+            </div>
+            <div class="faq-box">
+                <p>Where can I watch?
+                </p>
+                <div class="plus"></div>
+            </div>
+            <div class="faq-box">
+                <p> How do I cancel?</p>
+                <div class="plus"></div>
+            </div>
+            <div class="faq-box">
+                <p>What can I watch on Netflix?</p>
+                <div class="plus"></div>
+            </div>
+            <div class="faq-box">
+                <p>Is Netflix good for kids?</p>
+                <div class="plus"></div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

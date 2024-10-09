@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #000;
     color: #fff;
 }
@@ -13,35 +13,39 @@ body{
 .header {
     width: 100%;
     height: 100vh;
-    background-image: 
-        linear-gradient(180deg, 
-            rgba(2, 0, 36, 1) 0%, 
-            rgba(0, 0, 0, 1) 0%, 
-            rgba(0, 0, 0, 0.832) 7%, 
-            rgba(0, 0, 0, 0.507) 49%, 
-            rgba(0, 0, 0, 0.535) 60%, 
+    background-image:
+        linear-gradient(180deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.832) 7%,
+            rgba(0, 0, 0, 0.507) 49%,
+            rgba(0, 0, 0, 0.535) 60%,
             rgba(0, 0, 0, 0.802) 100%),
-        url(images/background-image.jpg); /* Ensure this path is correct */
-    background-size: cover; /* Cover the entire header area */
-    background-position: center; /* Center the image */
+        url(images/background-image.jpg);
+    /* Ensure this path is correct */
+    background-size: cover;
+    /* Cover the entire header area */
+    background-position: center;
+    /* Center the image */
     padding: 10px 20%;
     position: relative;
 }
 
 
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
 }
 
-.logo{
+.logo {
     width: 150px;
     cursor: pointer;
 }
-nav button{
+
+nav button {
     border: 0;
     outline: 0;
     background: #db0001;
@@ -53,28 +57,30 @@ nav button{
     cursor: pointer;
 }
 
-.language-btn{
+.language-btn {
     justify-content: center;
-    width: 100px;
-    display: inline-flex;
+    width: 105px;
+    /* display: inline-flex; */
     align-items: center;
     background: transparent;
     border: 1px solid #fff;
     padding: 7px 10px;
 }
-.language-btn img{
-    
+
+.language-btn img {
+
     width: 10px;
     padding: 0px 1px;
 }
+
 .lang-icon {
     filter: invert(100%);
     transform: scale(1.5);
     margin-right: 5px;
-  }
-  
+}
 
-.header-content{
+
+.header-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -83,41 +89,209 @@ nav button{
     margin-top: 0px;
 }
 
-.header-content h1{
+.header-content h1 {
     font-size: 70px;
     line-height: 80px;
     font-weight: 800;
     max-width: 1200px;
     letter-spacing: -1px;
-    transform: scaleX(0.9); 
+    transform: scaleX(0.9);
     display: inline-block;
 }
 
-.header-content h3{
+.header-content h3 {
     font-weight: 600;
     margin-top: 30px;
-    transform: scaleX(1.1); 
+    transform: scaleX(1.1);
     display: inline-block;
 }
 
 .header-content p {
     margin-top: 40px;
     font-weight: 600;
-    
+
 }
 
-.email-signup-input{
+.email-signup-input {
     margin-top: 15px;
     width: 450px;
     height: 60px;
-    background-color: #151515; /* Light grey background */
-    color: rgb(255, 255, 255); /* Text color */
-    border: 1px solid #ccc; /* Optional border color */
-    padding: 10px; /* Optional padding for better appearance */
+    background-color: #151515;
+    /* Light grey background */
+    color: rgb(255, 255, 255);
+    /* Text color */
+    border: 1px solid #ccc;
+    /* Optional border color */
+    padding: 10px;
+    /* Optional padding for better appearance */
     border-radius: 5px;
 }
 
-.get-started{
+.get-started {
     width: 200px;
     height: 60px;
+}
+
+.dome {
+    padding-top: 200px;
+    padding-left: 20%;
+    padding-right: 20%;
+    box-sizing: border-box;
+    position: relative;
+    height: 100px;
+    width: 100%;
+    top: -100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid .25rem transparent;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    border-bottom: none;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    background-clip: padding-box;
+    z-index: 1;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.fliter-tab {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.dome h1 {
+    transform: translate(-200%, -120px);
+    margin: 0px;
+    padding: 0px;
+}
+
+.fliter-tab button {
+    color: #999;
+    transform: translate(-410%, -10px);
+}
+
+.fliter-tab button img {
+    margin-left: 25px;
+
+}
+
+.movies-img {
+    background-image: url(images/moives-img.png);
+    transform: translate(35%, 0);
+    width: 1100px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    /* border: 1px red solid; */
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20%;
+}
+
+.footer h1 {
+    padding-top: 40px;
+}
+
+.reasons {
+    padding-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.reasons-boxes {
+    width: 286px;
+    height: 322px;
+    background: rgb(25, 34, 70);
+    background: linear-gradient(143deg, rgba(25, 34, 70, 1) 0%, rgba(33, 14, 23, 1) 100%);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.reasons-boxes h1{
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 20px;
+    line-height: 1.4;
+}
+.reasons-boxes p{
+    font-weight: lighter;
+    color: rgb(189, 188, 188);
+    padding-top: 30px;
+    font-size: 15px;
+}
+.vector-img1{
+    background-image: url(images/reason1.png);
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-position: center;
+    background-color: aqua;
+    transform: translate(180px, 100px);
+}
+.vector-img2{
+    background-image: url(images/reason2.png);
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-position: center;
+    background-color: aqua;
+    transform: translate(180px, 50px);
+}
+.vector-img3{
+    background-image: url(images/reason3.png);
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-position: center;
+    background-color: aqua;
+    transform: translate(180px, 100px);
+}
+.vector-img4{
+    background-image: url(images/reason4.png);
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-position: center;
+    background-color: aqua;
+    transform: translate(180px, 50px);
+}
+
+.faq h1{
+    padding-bottom: 30px;
+}
+
+.faq-box{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(45, 45, 45);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-box p {
+    padding-left:30px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+.plus {
+    background-image: url(images/vector9.svg);
+    background-position: center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    filter: invert(100%);
+    transform: translate(-10px, 20px);
 }
